@@ -9,10 +9,10 @@
 
 ```shell
 // イメージ作成
-docker build -t centos7_ssh .
+$ docker build -t centos7_ssh .
 
 // バックグラウンドでコンテナを起動
-docker run -d -P --name test_ssh centos7_ssh
+$ docker run -d -P --name test_ssh centos7_ssh
 
 // ポート確認
 $ docker port test_sshd 22
